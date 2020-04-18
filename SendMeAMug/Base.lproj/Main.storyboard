@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="SendMeAMug" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jPU-AQ-1Eg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7n-Nq-vQa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htr-ud-gbR">
+                                <rect key="frame" x="162" y="745" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="htr-ud-gbR" secondAttribute="height" multiplier="1:1" id="M2s-AU-enS"/>
+                                </constraints>
+                                <state key="normal" image="yellowButton" backgroundImage="yellowButton"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="htr-ud-gbR" firstAttribute="leading" secondItem="hcC-32-iuE" secondAttribute="leading" constant="162" id="OtM-mZ-R6q"/>
+                            <constraint firstItem="htr-ud-gbR" firstAttribute="top" secondItem="hcC-32-iuE" secondAttribute="top" constant="701" id="eTC-DX-uju"/>
+                            <constraint firstItem="htr-ud-gbR" firstAttribute="centerX" secondItem="hcC-32-iuE" secondAttribute="centerX" id="ehO-yO-xQ2"/>
+                            <constraint firstItem="a7n-Nq-vQa" firstAttribute="centerX" secondItem="jPU-AQ-1Eg" secondAttribute="centerX" id="jFc-Ug-cYB"/>
+                            <constraint firstItem="a7n-Nq-vQa" firstAttribute="centerY" secondItem="jPU-AQ-1Eg" secondAttribute="centerY" id="olD-g7-T1z"/>
+                            <constraint firstItem="hcC-32-iuE" firstAttribute="trailing" secondItem="htr-ud-gbR" secondAttribute="trailing" constant="162" id="u4U-GD-He7"/>
+                            <constraint firstItem="a7n-Nq-vQa" firstAttribute="width" secondItem="jPU-AQ-1Eg" secondAttribute="width" id="vkI-JM-S9t"/>
+                            <constraint firstItem="a7n-Nq-vQa" firstAttribute="height" secondItem="jPU-AQ-1Eg" secondAttribute="height" id="xbr-JH-D8M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hcC-32-iuE"/>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="a7n-Nq-vQa" id="nyJ-m6-kem"/>
+                        <outlet property="shareButton" destination="htr-ud-gbR" id="BFj-ox-C68"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yellowButton" width="86" height="86"/>
+    </resources>
+</document>
