@@ -14,7 +14,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var arView: ARView!
     @IBOutlet weak var shareButton: UIButton!
     @IBAction func shareButton(_ sender: Any) {
-        self.arView.asImage()
+
+        let alert = UIAlertController.init(title: "Tire um ScreenShot",
+                                           message: "Você esperava que eu iria fazer tudo por você? Tire um ScreenShot para pode compartilhar.",
+                                           preferredStyle: .alert)
+
+        let okAction = UIAlertAction.init(title: "OK",
+                                              style: .cancel)
+
+        alert.addAction(okAction)
+
     }
     
     override func viewDidLoad() {

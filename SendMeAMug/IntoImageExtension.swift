@@ -26,7 +26,9 @@ extension ARView {
             let image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
 
-            return UIImage(cgImage: image!.cgImage!)
+            let imageToSend = UIImage(cgImage: image!.cgImage!)
+
+            return imageToSend
         }
     }
 }
