@@ -230,6 +230,18 @@
                     "overrides" : {
                       "arguments" : [
                         [
+                          "bgMaterialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              1,
+                              1,
+                              0.73333334922790527,
+                              1
+                            ]
+                          }
+                        ],
+                        [
                           "boundHeight",
                           {
                             "typeName" : "Double",
@@ -268,7 +280,7 @@
                           "height",
                           {
                             "typeName" : "Double",
-                            "value" : 0.10000000000000001
+                            "value" : 0.05533906580622884
                           }
                         ],
                         [
@@ -282,7 +294,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "paintEnamelMatte"
                           }
                         ],
                         [
@@ -290,9 +302,9 @@
                           {
                             "typeName" : "double4",
                             "value" : [
-                              0.25,
-                              0.15000000596046448,
-                              0.05000000074505806,
+                              1,
+                              1,
+                              1,
                               1
                             ]
                           }
@@ -315,7 +327,7 @@
                           "text",
                           {
                             "typeName" : "String",
-                            "value" : "I need some coffee"
+                            "value" : "Tô precisando de um café"
                           }
                         ],
                         [
@@ -340,6 +352,22 @@
                           }
                         ]
                       ],
+                      "children" : {
+                        "back_1" : {
+                          "overrides" : {
+                            "factory" : null,
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "FAF84871-BA13-48E1-BF8F-D3B417CEC64D"
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
                       "factory" : {
                         "identifier" : "com.apple.rc.af.CoreAssetFactories.Text",
                         "version" : "0.0"
@@ -350,6 +378,13 @@
                           {
                             "typeName" : "UUID",
                             "value" : "6EA574BA-6B41-4548-95CB-9490878A7B78"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "textinho"
                           }
                         ]
                       ]
@@ -512,9 +547,9 @@
                   0.58980089426040649,
                   0.8075486421585083,
                   0,
-                  0.033523991703987122,
-                  0.94603776931762695,
-                  1.3777042627334595,
+                  0.011179760098457336,
+                  0.957142174243927,
+                  1.3695942163467407,
                   1
                 ],
                 "sceneTransform" : [

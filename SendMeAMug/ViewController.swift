@@ -12,7 +12,7 @@ import RealityKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var arView: ARView!
-    @IBOutlet weak var shareButton: UIButton!
+
     @IBAction func shareButton(_ sender: Any) {
 
         let alert = UIAlertController.init(title: "Tire um ScreenShot",
@@ -23,9 +23,9 @@ class ViewController: UIViewController {
                                               style: .cancel)
 
         alert.addAction(okAction)
-
+        present(alert, animated: true)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
